@@ -1,4 +1,4 @@
-package com.lightbend.akka.http.sample
+package com.xyz.akka.http.sample
 
 //#test-top
 import akka.actor.ActorRef
@@ -14,8 +14,8 @@ class UserRoutesSpec extends WordSpec with Matchers with ScalaFutures with Scala
   //#test-top
 
   // Here we need to implement all the abstract members of UserRoutes.
-  // We use the real UserRegistryActor to test it while we hit the Routes, 
-  // but we could "mock" it by implementing it in-place or by using a TestProbe() 
+  // We use the real UserRegistryActor to test it while we hit the Routes,
+  // but we could "mock" it by implementing it in-place or by using a TestProbe()
   override val userRegistryActor: ActorRef =
     system.actorOf(UserRegistryActor.props, "userRegistry")
 
