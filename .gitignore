@@ -1,3 +1,14 @@
 *.class
 .idea
 target/
+target
+bin.
+classpath
+.project
+.DS_Store
+.cache-main
+.cache-tests
+tmp
+*.DS_STORE
+build/
+.cache
